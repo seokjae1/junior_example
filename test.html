@@ -1,0 +1,22 @@
+<script>
+  function test(n){
+    console.log("start : " + new Date(dateString));
+    return (n * (n + 1)) / 2;
+  }
+  console.log(test(100000000));
+  console.log("end : " + new Date(dateString));
+</script>
+
+
+<script>
+  function test2(){
+    var sum = 0;
+    console.log("start : " + new Date());
+    for(i=1; i<=100000000; i++){
+      sum = sum + i;
+    }
+    return sum;
+  }
+  console.log(test2());
+  console.log("end : " + new Date());
+</script>
